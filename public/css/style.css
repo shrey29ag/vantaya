@@ -116,6 +116,4 @@ body{
     padding-right: 0;
 }
 
-/*
-#map { height: 400px; width: 80vh; }
-*/
+#map { height: 400px; width: 100%; }
