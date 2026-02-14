@@ -28,7 +28,6 @@ const initDB = async () => {
             type: "Point",
             coordinates: [77.209, 28.6139],
         },
-        category: "Trending",
     }));
     await Listing.insertMany(initData.data);
     console.log("data was initialized");

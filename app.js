@@ -120,6 +120,14 @@ app.use((err, req, res, next) => {
     // res.status(statusCode).send(message);
 });
 
-app.listen(8080, () => {
-    console.log("Port Working...");
-});
+// app.listen(8080, () => {
+//     console.log("Port Working...");
+// });
+
+if (require.main === module) {
+    app.listen(8080, () => {
+        console.log("Server is listening on port 8080");
+    });
+}
+
+module.exports = app;
